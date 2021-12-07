@@ -4,128 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ridvan Oković - Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <!--
-        Name: Ridvan Okovic
-        Course: CS412
-        Assignment: Project 2
-        Due Date: 05.11.2021
-        Purpose:HTML&CSS project
-    -->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-    <div class="wrapper">
-        <div class="sidebar">
-            <h1>Resume</h1>
-            <div class="resume-photo">
-                <img src="images/Ridvan.jpg" alt="Photo of myself">
+    <body>
+        <!-- header start -->
+        <header>
+            <div class="user">
+                <img src="images/Ridvan.jpg" alt="Profile picture">
+                <h3 class="name">Ridvan Oković</h3>
+                <p class="post">Software Engineer</p>
             </div>
 
-            <ul>
-                <li><a href="#section1"> <img src="images/biography.png" alt="bio" width="24"> About me</a></li>
-                <li><a href="#section2"> <img src="images/education.png" alt="bio" width="24"> Education</a></li>
-                <li><a href="#section3"> <img src="images/skills.png" alt="bio" width="24"> Skills</a></li>
-                <li><a href="#section4"> <img src="images/hard-work.png" alt="bio" width="24"> Experience</a></li>
-                <li><a href="#section5"> <img src="images/location.png" alt="bio" width="24"> Interests</a></li>
-            </ul>
-
-            <div class="social">
-                <a href="https://www.facebook.com/ridvan.okovic/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ridvan.okovic/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:okovic.ridvan@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
-            </div>
-        </div>
-
-        <div class="main">
-            <section id="section1">
-                <h1>
-                    <img src="images/biography.png" alt="bio" width="30">
-                    About me
-                </h1>
-                <p>
-                    My name is Ridvan Okovic. I am from Sarajevo, Bosnia & Herzegowina, and I am currently studying 
-                    Software Engineering at International University of Sarajevo. I am currently attending the third 
-                    year of my Bachelor studies. I possess experience with automation with python, webscrapping and 
-                    software testing. I acquired MTA diploma for Intro to Java. If You would like to contact me or have any questions You can e-mail me at: 
-                    <a href="mailto:okovic.ridvan@gmail.com">okovic.ridvan@gmail.com</a>, also if You would like to 
-                    cantact me in some other way my telephone number is: <a href="0038761019373">0038761019373</a>.
-                </p> 
-                <input id="mail" type="email" class="form-control" placeholder="Leave your email address here">                 
-                <button type="submit">Confirm</button>
-
-            </section>
-
-            <section id="section2">
-                <h1>
-                    <img src="images/education.png" alt="bio" width="30">
-                    Education
-                </h1>
+            <nav class="navbar">
                 <ul>
-                    <li>
-                        <a href="http://osmccsa.edu.ba/v2/" target="_blank">
-                            <b>Primary School:</b> Musa Ćazim Ćatić (2006-2014)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://bosnjackagim.edu.ba/" target="_blank">
-                            <b>Secondary School:</b> Prva Bošnjačka Gimnazija Sarajevo(Cambridge Curriculum) - 
-                            <abbr title="Prva Bošnjačka Gimnazija Sarajevo"> PBGS </abbr> (2014-2018)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.ius.edu.ba/bs" target="_blank">
-                            <b>Bachelor:</b> International University of Sarajevo - 
-                            <abbr title="International University of Sarajevo">IUS</abbr> (2019-present)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="images/ExamScore.PNG" target="_blank">
-                            <b>MTA Certificate:</b> Introduction to Programming using Java 
-                        </a>
-                    </li>
-                </ul>                                               
-            </section>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header end -->
 
-            <section id="section3">
-                <h1>
-                    <img src="images/skills.png" alt="bio" width="30">
-                    Skills
-                </h1>  
-                <ul id="skills">
-                    <li>Automation with Python</li>
-                    <li>Communication skills</li>
-                    <li>Programming<br>
-                         Java, Python, C++ and JavaScript</li>
-                    <li>Research</li>
-                    <li>Web Development</li>
-                    <li>Web scrapping</li>
-                    <li>Writing</li>
-                </ul>          
-            </section>
+        <div id="menu" class="fas fa-bars"></div>
 
-            <section id="section4">
-                <h1>
-                    <img src="images/hard-work.png" alt="bio" width="30">
-                    Experience
-                </h1>
-                <p>Worked at: <a href="https://www.comtradedistribution.com/" target="_blank">Comtrade Distribution d.o.o.</a> and their service center (2019/2020).</p>               
-            </section>
+        <!-- home start -->
+        <section class="home" id="Home">
+            <h3>HELLO !</h3>
+            <h1>I'm <span>Ridvan Oković</span></h1>
+            <p>
+                This is my project for the course Web Application Development (CS412) - prof. Ali Almisreb, which is a resume web page.
+            </p>
+            <a href="#About"><button class="btn">About me<i class="fas fa-user"></i></button></a>
+        </section>
+        <!-- home end -->
 
-            <section id="section5">
-                <h1>
-                    <img src="images/location.png" alt="bio" width="30">
-                    Interests
-                </h1>
-                <p>
-                    I'm interested in cyber security, cloud computing and ethical hacking. I would also like to gain some knowledge in game development and game design. I'm very passionate about Computer Science/Software Engineering and computers in general. I'm a very outgoing person and I like to go to meetings to meet new people and widen my margins with my connections to poeple and companies. I would like to get some experience in the working field by the end of the year(to work as an intern) and probably gain some clients for web development. 
-                </p>             
-            </section>
-        </div>
-    </div>
-    
-    <script src="https://kit.fontawesome.com/095bb13673.js" crossorigin="anonymous">
-    </script>
-</body>
+        <!-- about start -->
+        <section class="about" id="About">
+            <h1 class="heading">About me</h1>
+            <div class="row">
+                <div class="info">
+                    <h3> <span> Name : </span> Ridvan Oković </h3>
+                    <h3> <span> Age : </span> 21 </h3>
+                    <h3> <span> Qualification : </span> Software Engineer </h3>
+                    <h3> <span> Languages : </span> Bosnian, English and Turkish </h3>
+                    <a href="#"><button class="btn">Download CV <i class="fa fa-download"></i></button></a>
+                </div>
+
+                <div class="counter">
+                    <div class="box">
+                        <span>Several</span>
+                        <h3>Projects Completed</h3>
+                    </div>
+
+                    <div class="box">
+                        <span>2</span>
+                        <h3>Web Pages Created</h3>
+                    </div>
+
+                    <div class="box">
+                        <span>Java</span>
+                        <h3>Microsoft Certification Completed</h3>
+                    </div>
+
+                    <div class="box">
+                        <span>Pygame</span>
+                        <h3>1 Game Developed using PyGame</h3>
+                    </div>
+                </div>
+        </section>
+        <!-- about end -->
+
+        <!-- education start -->
+        <section class="education" id="Education">
+            <h1 class="heading">Education</h1>
+
+            <div class="container-box">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2006 - 2014</span>
+                    <h3>Osnovna Škola Musa Ćazim Ćatić Sarajevo</h3>
+                    <p>Primary School</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2014 - 2018</span>
+                    <h3>Prva Bošnjačka Gimnazija Sarajevo</h3>
+                    <p>Secondary School</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2018 - Present</span>
+                    <h3>International Univeristy of Sarajevo</h3>
+                    <p>Univeristy</p>
+                </div>
+            </div>
+        </section>
+        <!-- education end -->
+
+        <!-- Contact start -->
+        <section class="contact" id="Contact">
+            <div class="heading">Contact me</div>
+            <div class="row">
+
+            </div>
+        </section>
+        <!-- Contact end -->
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
