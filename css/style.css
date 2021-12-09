@@ -103,6 +103,7 @@ header {
     text-align: center;
 }
 
+/* -------- Light - Dark mode switch --------
 header input[type="checkbox"] {
     visibility: hidden;
     display: none;
@@ -154,6 +155,7 @@ input:checked + label {
 label:active:after {
     width: 20px;
 }
+*/
 
 header .user img {
     height:20rem;
