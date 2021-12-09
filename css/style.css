@@ -12,7 +12,6 @@
     text-decoration: none;
     outline: none; border: none;
     transition: all .2s linear;
-    scroll-behavior: smooth;
 }
 
 /* ------ Selection ------ */
@@ -136,6 +135,40 @@ header .navbar ul li a:hover {
     color: #000000;
 }
 
+header .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1rem;
+    padding: .7rem 4rem 0.35rem 4rem;
+    margin: 1.5rem 0;
+    background: #333;
+    font-size: 3rem;
+    gap: 3rem;
+    border-radius: 5rem;
+}
+
+header .socials > * {
+    flex-basis: 100%;
+}
+
+header .socials .nav_link {
+    color: #fff;
+}
+
+header .socials .nav_link:hover:nth-child(1) {
+    color: #4267B2;
+}
+
+header .socials .nav_link:hover:nth-child(2) {
+    color: #C13584;;
+}
+
+header .socials .nav_link:hover:nth-child(3) {
+    color: #000;
+}
+
 #menu {
     position: fixed;
     top:2rem; right:2rem;
@@ -206,9 +239,65 @@ header .navbar ul li a:hover {
     flex: 1 1 48rem;
     display: flex;    
     justify-content: center;
+    flex-flow: column;
     flex-wrap: wrap;
+    margin: 0 6rem 0 6rem;
 }
 
+.about .row .counter h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--light-blue);
+    padding-bottom: 1rem;
+}
+
+.about .row .counter .accordion {
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;   
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about .row .counter .accordion:nth-child(2) {
+    border-radius: 2rem 2rem 0 0; 
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.about .row .counter .accordion:nth-child(4) {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.about .row .counter .accordion:nth-child(6) {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.about .row .counter .accordion:nth-child(8) {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.about .row .counter .accordion:nth-child(10) {
+    border-radius: 0 0 2rem 2rem; 
+}
+
+.about .row .counter .accordion:hover {
+    background: var(--light-blue);
+    color: #000;
+}
+
+.about .row .counter .panel {
+    background: #222;
+    margin: 0 5px;
+    padding: 1rem;
+    font-size: 2rem;
+    display: none;
+    overflow: hidden;
+    color: var(--light-blue);
+    text-align: center;
+}
+
+/*
 .about .row .counter .box {
     width: 20rem;
     background: #333;
@@ -227,6 +316,7 @@ header .navbar ul li a:hover {
     font-size: 2rem;
     color: #fff;
 }
+*/
 
 .education .container-box {
     display: flex;
@@ -343,20 +433,32 @@ header .navbar ul li a:hover {
     color: #fff;
 }
 
+#top {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
 
+.arrow-up {
+    color: #fff;
+}
 
+.arrow-up:hover {
+    color: #000;
+}
 
+.arrow-up i {
+    font-size: 2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
+.far {
+    position: fixed;
+    right: 7rem; top: 22.22rem;
+    font-size: 2.5rem;
+    color: greenyellow;
+    display: none;
+}
 
 
 
