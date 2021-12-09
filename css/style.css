@@ -82,10 +82,10 @@ body.light-mode {
 header #demo {
     color: white;
     position: fixed;
-    top: 8rem;
+    top: 2rem;
     font-size: 1.5rem;
     background: #333;
-    padding: 1rem 7rem;
+    padding: .7rem 4rem 0.35rem 4rem;
     border-radius: 5rem;
 }
 
@@ -105,6 +105,7 @@ header {
 
 header input[type="checkbox"] {
     visibility: hidden;
+    display: none;
 }
 
 header .checkbox {
@@ -112,6 +113,8 @@ header .checkbox {
     top: 2rem;
     width: 0;
     height: 0;
+    visibility: hidden;
+    display: none;
 }
 
 header label {
