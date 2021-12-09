@@ -39,14 +39,15 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 
-body {
-    background: #111;
-    overflow-x: hidden;
-    padding-left: 35rem;
-}
+
 
 section {
     min-height: 100vh; padding: 1rem;
+}
+
+body.light-mode {
+    background: #fafafa;
+    color: #000;
 }
 
 .btn {
@@ -78,6 +79,16 @@ section {
     color: #fff;
 }
 
+header #demo {
+    color: white;
+    position: fixed;
+    top: 8rem;
+    font-size: 1.5rem;
+    background: #333;
+    padding: 1rem 7rem;
+    border-radius: 5rem;
+}
+
 header {
     position: fixed;
     top:0; left:0;
@@ -90,6 +101,55 @@ header {
     justify-content: center;
     flex-flow: column;
     text-align: center;
+}
+
+header input[type="checkbox"] {
+    visibility: hidden;
+}
+
+header .checkbox {
+    position: fixed;
+    top: 2rem;
+    width: 0;
+    height: 0;
+}
+
+header label {
+    display: block;
+    width: 50px;
+    height: 20px;
+    left: -25px;
+    background-color: #333;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #a6abac50;
+}
+
+header label::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 70px;
+    top: 2.25px;
+    left: 2.25px;
+    transition: 0.5s;
+}
+
+input:checked + label:after {
+    left: calc(90%);
+    transform: translateX(-90%);
+}
+
+input:checked + label {
+    background-color: var(--light-blue);
+}
+
+label:active:after {
+    width: 20px;
 }
 
 header .user img {
@@ -144,7 +204,7 @@ header .socials {
     padding: .7rem 4rem 0.35rem 4rem;
     margin: 1.5rem 0;
     background: #333;
-    font-size: 3rem;
+    font-size: 2rem;
     gap: 3rem;
     border-radius: 5rem;
 }
@@ -281,7 +341,7 @@ header .socials .nav_link:hover:nth-child(3) {
     border-radius: 0 0 2rem 2rem; 
 }
 
-.about .row .counter .accordion:hover {
+.about .row .counter .accordion:hover,:focus {
     background: var(--light-blue);
     color: #000;
 }
@@ -460,7 +520,11 @@ header .socials .nav_link:hover:nth-child(3) {
     display: none;
 }
 
-
+body {
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
 
 
 /* ------ Media Queries ------ */

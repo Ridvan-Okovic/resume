@@ -31,6 +31,8 @@ let ridvan = {
     firstname: "Ridvan", lastname: "Okovic", age: "21", curriculum: "Software Engineering"
 };
 
+console.log(ridvan);
+
 function validateEmail() {
     var form = document.getElementById("form");
     var email = document.getElementById("email").value;
@@ -63,4 +65,42 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
+}
+
+const checkbox = document.getElementById('switch');
+
+checkbox.addEventListener('change', ()=>{
+    document.body.classList.toggle('light-mode');
+})
+
+function day() {
+    switch (new Date().getDay()) {
+        case 0:         
+          day = "Sunday";
+          document.getElementById("demo").innerHTML = day;
+          break;
+        case 1:
+          day = "Monday";
+          document.getElementById("demo").innerHTML = day;
+          break;
+        case 2:
+           day = "Tuesday";
+           document.getElementById("demo").innerHTML = day;
+          break;
+        case 3:
+          day = "Wednesday";
+          document.getElementById("demo").innerHTML = day;
+          break;
+        case 4:
+          day = "Thursday";
+          document.getElementById("demo").innerHTML = day;
+          break;
+        case 5:
+          day = "Friday";
+          document.getElementById("demo").innerHTML = day;
+          break;
+        case 6:
+          day = "Saturday";
+          document.getElementById("demo").innerHTML = day;
+    }
 }
